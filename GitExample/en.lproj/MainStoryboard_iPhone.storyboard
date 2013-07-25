@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHD-Yd-BXn">
@@ -35,14 +35,20 @@
                                     <action selector="buttonClicked:" destination="2" eventType="touchUpInside" id="C0v-1X-8d3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wiggle Wiggle Wiggle Wiggle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTq-oM-r67">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Ajk-ZS-Ygp" secondAttribute="bottom" constant="207" id="BSe-Bh-A2V"/>
                             <constraint firstItem="Ajk-ZS-Ygp" firstAttribute="baseline" secondItem="FHD-Yd-BXn" secondAttribute="baseline" type="default" id="DLE-xw-4Zi"/>
-                            <constraint firstItem="Ajk-ZS-Ygp" firstAttribute="top" secondItem="FHD-Yd-BXn" secondAttribute="top" type="default" id="VnJ-aP-L7l"/>
+                            <constraint firstItem="CTq-oM-r67" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="U9L-Cy-8LH"/>
                             <constraint firstItem="Ajk-ZS-Ygp" firstAttribute="leading" secondItem="FHD-Yd-BXn" secondAttribute="leading" type="default" id="kIP-UQ-olj"/>
-                            <constraint firstItem="FHD-Yd-BXn" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="zRU-nK-gp4"/>
+                            <constraint firstItem="CTq-oM-r67" firstAttribute="top" secondItem="3" secondAttribute="top" constant="148" id="o1s-Wr-6hg"/>
+                            <constraint firstItem="CTq-oM-r67" firstAttribute="centerX" secondItem="Ajk-ZS-Ygp" secondAttribute="centerX" type="default" id="wql-hx-dnt"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -65,6 +71,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
